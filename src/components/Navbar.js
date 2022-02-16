@@ -31,22 +31,22 @@ class Navbar extends Component {
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link class="nav-link active" aria-current="page" to="/About">
+                  <Link class="nav-link active" aria-current="page" to="/about">
                     About
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link class="nav-link active" aria-current="page" to="/Services">
+                  <Link class="nav-link active" aria-current="page" to="/services">
                     Services
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link class="nav-link active" aria-current="page" to="/Blogs">
+                  <Link class="nav-link active" aria-current="page" to="/blogs">
                     Blogs
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link class="nav-link active" aria-current="page" to="/Contact">
+                  <Link class="nav-link active" aria-current="page" to="/contact">
                     Contact
                   </Link>
                 </li>

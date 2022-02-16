@@ -16,6 +16,7 @@ class Blogs extends Component {
         })
         .then((entries) => {
           this.setState({blogpage : entries.items});
+          console.log(entries.items)
         });
      }
 
@@ -37,9 +38,9 @@ class Blogs extends Component {
                                 return(
                            <div key={index} className="col-md-6 blog-content">
                                <img src={item.fields.blogThumbnail.fields.file.url} className="img-blog img-fluid" alt=""/>
-                               <h3><Link to={`../Blogs/${item.fields.slug}`}>{item.fields.blogTitle}</Link></h3>
+                               <h3><Link to={`../blogs/${item.fields.slug}`}>{item.fields.blogTitle}</Link></h3>
                                <p>{item.fields.blogDescription}</p>
-                               <button className="btn btn-primary"><Link to={`../Blogs/${item.fields.slug}`}>Read more</Link></button>
+                               <button className="btn btn-primary"><Link to={`../blogs/${item.fields.slug}`}>Read more</Link></button>
                            </div>
                            )
                            } 

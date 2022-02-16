@@ -21,6 +21,7 @@ class SingleBlog extends Component {
               .then((entries) => {
                 this.setState({article : entries.items[0]}); 
               })
+              .catch(console.error)
         }
      
 
@@ -48,7 +49,7 @@ class SingleBlog extends Component {
                     <div className="col-md-12">
                         <h2 className="mt-4">{this.state.article.fields.blogTitle}</h2>
                         <p dangerouslySetInnerHTML = {this.getParsedMarkdown(this.state.article.fields.blogDescription)}></p>
-                        <p><Link to="#" onClick={this.redirectToTarget}>Back</Link></p>
+                        <p><Link to="/" onClick={this.redirectToTarget}>Back</Link></p>
                     </div>
                 </div>
             </div>

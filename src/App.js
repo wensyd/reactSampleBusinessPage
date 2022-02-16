@@ -24,11 +24,11 @@ class App extends Component {
       <div className="">
       <Routes>
         <Route path="/" element= {<Home/>} />
-        <Route path="/About" element = {<About/>}/>
-        <Route path="/Services" element = {<Services/>}/>
-        <Route path="/Blogs" element = {<Blogs/>}/>
-        <Route path="/:slug" element = {<SingleBlog/>}/>
-        <Route path="/Contact" element = {<Contact/>}/>
+        <Route path="/about" element = {<About/>}/>
+        <Route path="/services" element = {<Services/>}/>
+        <Route path="/blogs" element = {<Blogs/>}/>
+        <Route path="/blogs/:index" element = {<SingleBlog/>}/>
+        <Route path="/contact" element = {<Contact/>}/>
       </Routes>
       </div>
     )
